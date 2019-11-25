@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+  
+  <div class="row justify-content-md-center">
+    <h2>New Homer</h2>
+  </div>
+
+  <div class="row justify-content-md-center">
+    <form method="POST" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.homer_picture }}
+  </div>
+
+  <div class="row justify-content-md-center">
+    <button type="submit">Evaluate</button>
+  </div>
+  
+    </form>
+</div>
+{% endblock content %}

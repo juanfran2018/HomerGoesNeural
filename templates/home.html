@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="jumbotron">
+  <h1 class="display-4" align="center">How does your Homer feel today?</h1>
+  <img src="{% static 'images/headerSimpsons.jpeg' %}" class="rounded mx-auto d-block">
+  <p class="lead" align="center">A Neural Network Approach</p>
+  <hr class="my-4">
+  <p align="center">This web shows an example of the potential of neural networks for image evaluation</p>
+  <p align="center">Just go to <i>Evaluate your Homer</i>, upload an image containing Homer Simpson and you'll be one click away from finding out how Homer feels today!</p>
+  <div class="text-center">
+    <a class="btn btn-primary btn-lg" href="{% url 'evaluate_homer' %}" role="button" align="center">Evaluate your Homer!</a>
+    </div>
+</div>
+
+{% endblock content %}
