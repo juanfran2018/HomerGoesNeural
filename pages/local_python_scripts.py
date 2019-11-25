@@ -1,3 +1,3 @@
 def ev_test1(homerpath):
-    a = 1
+    a = 0
     return a
